@@ -18,6 +18,6 @@ jobs:
       - name: Clean install dependencies and Build
         run: |
          yarn install
-         rm -rf build
+         rm -rf build CI=false
          yarn test 
          yarn build
